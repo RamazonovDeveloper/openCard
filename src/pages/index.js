@@ -1,11 +1,9 @@
 import Image from "next/image";
-import "./i18n";
 import React from "react";
-
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 export default function Home() {
-  const t = useTranslation();
+  const { t } = useTranslation("common");
   return (
     <div>
       <header>

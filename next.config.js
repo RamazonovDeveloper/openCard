@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+const { i18n } = require("./next-i18next.config.js");
+
 const nextConfig = {
   experimental: {
-    appDir: true,
+    esmExternals: false,
   },
-}
+  i18n,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
